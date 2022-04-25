@@ -1,9 +1,10 @@
-<!--создание/редактирование категории-->
+<!-- создание/редактирование категории -->
 
 <mat-dialog-content>
   <p mat-dialog-title>{{dialogTitle}}</p>
 
   <mat-form-field>
+
     <mat-label>{{'COMMON.NAME-20SYMBOLS' | translate}}</mat-label>
     <input #inputTitle matInput maxlength="15"
            [(ngModel)]="category.title"
@@ -17,9 +18,10 @@
     >
       <mat-icon>clear</mat-icon>
     </button>
-  </mat-form-field>
-</mat-dialog-content>
 
+  </mat-form-field>
+
+</mat-dialog-content>
 
 <!--  кнопки возможных действий-->
 <mat-dialog-actions class="padding-bottom-20">
@@ -37,7 +39,6 @@
     <button mat-raised-button (click)="cancel()">{{'COMMON.CANCEL' | translate}}</button>
 
   </div>
-
 
   <div class="col-12 text-center">
 

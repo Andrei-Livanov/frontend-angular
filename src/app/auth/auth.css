@@ -3,11 +3,11 @@
 a.disabled {
   pointer-events: none;
   cursor: default;
-  color: rgba(156,156,156,0.93) !important;
+  color: rgba(156, 156, 156, 0.93) !important;
 }
 
 .field-error {
-  border:1px solid rgba(214,87,55,0.93);
+  border: 1px solid rgba(214, 87, 55, 0.93);
 }
 
 /* ==========================================================================
@@ -627,34 +627,34 @@ input {
   color: rgba(200, 83, 78, 0.93);
 }
 
-.desc{
+.desc {
   padding-top: 5px;
-  color: rgba(106,106,106,0.93);
+  color: rgba(106, 106, 106, 0.93);
 }
 
-.disabled-button, .disabled-button:hover{
+.disabled-button, .disabled-button:hover {
   cursor: default;
   background-color: #c8c8c8;
 }
 
-a.underline{
-  border-bottom: 1px dashed rgba(0,121,214,0.93);
+a.underline {
+  border-bottom: 1px dashed rgba(0, 121, 214, 0.93);
 }
 
 .cancel-region {
   padding-top: 20px;
 }
 
-.loading{
+.loading {
   max-width: 40px;
 }
 
 .routerLink {
   line-height: 20px;
-  color: rgba(45,102,214,0.93) !important;
+  color: rgba(45, 102, 214, 0.93) !important;
 }
 
-.btn:hover{
-  background-color: rgba(31,129,214,0.93) !important;
-  color:white !important;
+.btn:hover {
+  background-color: rgba(31, 129, 214, 0.93) !important;
+  color: white !important;
 }

@@ -1,8 +1,7 @@
 .completed {
   color: #959393 !important;
   background-color: white;
-  text-decoration: rgba(66,66,66,0.7) line-through;
-
+  text-decoration: rgba(66, 66, 66, 0.7) line-through;
 }
 
 .title-completed {
@@ -12,7 +11,6 @@
 .novalue {
   color: #b7b7b7;
 }
-
 
 .col-id {
   width: 4%;
@@ -30,8 +28,6 @@
 .col-category {
   width: 15%;
 }
-
-
 
 .col-operations {
   width: 20%;
@@ -67,7 +63,6 @@
   font-weight: normal;
 }
 
-
 .card-mobile {
   border-radius: 5px;
   margin-bottom: 10px;
@@ -77,7 +72,6 @@
 .background-completed {
   background-color: rgba(167, 214, 182, 0.89) !important;
 }
-
 
 .mobile-priority-top {
   height: 5px;
@@ -98,9 +92,8 @@
   margin-left: 10px;
 }
 
-
 .mobile-category {
-  background-color: rgba(157,157,157,0.06);
+  background-color: rgba(157, 157, 157, 0.06);
   float: left;
   display: inline-block;
   text-align: left;
@@ -110,7 +103,7 @@
 }
 
 .mobile-priority {
-  background-color: rgba(157,157,157,0.06);
+  background-color: rgba(157, 157, 157, 0.06);
   float: left;
   display: inline-block;
   text-align: left;
@@ -131,7 +124,7 @@
   border-radius: 4px;
 }
 
-.date-completed{
+.date-completed {
   color: white !important;
 }
 
@@ -149,7 +142,6 @@
   color: #8e8e8e;
 }
 
-
 .mobile-title {
   font-size: 16px;
   line-height: 20px;
@@ -158,17 +150,15 @@
 
 }
 
-
 .check-icon-notcompleted {
   font-size: 3rem;
   color: #dadada;
 }
 
 .check-icon-completed {
-  font-size:  3rem;
+  font-size: 3rem;
   color: rgba(167, 214, 182, 0.89);
 }
-
 
 .reset-search {
   margin-top: 10px;
@@ -177,7 +167,6 @@
   color: rgba(5, 83, 123, 0.98);
   text-align: center;
 }
-
 
 div.card-mobile p {
   margin-bottom: 0 !important;
@@ -195,25 +184,19 @@ div.card-mobile p {
   width: 100%;
 }
 
-
-.check > .mat-icon-button{
+.check > .mat-icon-button {
   width: 100% !important;
   height: 100% !important;
 }
 
-
 .search-region {
-  box-shadow:
-    inset 0px 11px 8px -10px #8C8C8C,
-    inset 0px -11px 8px -10px #8C8C8C;
+  box-shadow: inset 0 11px 8px -10px #8C8C8C,
+  inset 0 -11px 8px -10px #8C8C8C;
 
   padding-left: 25px !important;
   padding-right: 25px !important;
-
   background-color: #FFFBE6;
   opacity: 1 !important;
-
-
 }
 
 .mobile-task-list {
@@ -221,49 +204,42 @@ div.card-mobile p {
   padding: 25px;
 }
 
-
 .founded-text {
   font-size: 1.5rem;
 
 }
 
-
 .mobile-founded-text {
   color: white;
 }
 
-.founded-region{
+.founded-region {
   margin-top: 15px;
 }
 
-.desktop-task-list{
+.desktop-task-list {
   padding: 25px;
 }
 
-
 .mat-icon {
-
   height: 100% !important;
   width: 100% !important;
 }
-
-
 
 .height-25 {
   height: 25px !important;
 }
 
-.mat-cell{
+.mat-cell {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.table-icon{
+.table-icon {
   height: 30px !important;
   width: 30px !important;
 }
 
-
-.nopriority, .nocategory{
+.nopriority, .nocategory {
   color: #5a6268;
 }

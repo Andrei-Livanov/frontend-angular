@@ -1,14 +1,14 @@
 <div class="page-wrapper bg-gra-02 font-poppins" *ngIf="showResendLink"
      [ngClass]="{'p-t-130 p-b-100':!isMobile, 'p-t-20 p-b-20':isMobile}">
-  <div class="container wrapper wrapper--w680">
-    <div class="card card-4">
 
+  <div class="container wrapper wrapper--w680">
+
+    <div class="card card-4">
 
       <div class="card-body">
         <form [formGroup]="form" (ngSubmit)="submitForm()">
 
           <h2 class="auth-title" *ngIf="!isMobile">Активация аккаунта</h2>
-
 
           <div class="row row-space">
             <div class="col-md-6 col-sm-12">
@@ -56,36 +56,30 @@
 
             <div class="col-md-6 col-sm-12">
 
-
               <img src="/assets/img/loading.gif" class="loading" *ngIf="isLoading">
-
 
               <div *ngIf="error && !isLoading">
                 <p class="error">{{error}}</p>
-
               </div>
-            </div>
 
+            </div>
 
           </div>
 
           <div class="row row-space" class="cancel-region">
+
             <div class="col-md-6 col-sm-12 nopadding">
               <a routerLink="" [class.disabled]="isLoading ? true: null" class="routerLink">Войти в систему</a>
-
-
             </div>
-
 
           </div>
 
-
         </form>
-
 
       </div>
 
-
     </div>
+
   </div>
+
 </div>

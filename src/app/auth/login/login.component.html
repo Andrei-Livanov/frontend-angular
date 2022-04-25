@@ -1,17 +1,16 @@
 <div class="page-wrapper bg-gra-02 font-poppins"
      [ngClass]="{'p-t-130 p-b-100':!isMobile, 'p-t-20 p-b-20':isMobile}">
+
   <div class="container wrapper wrapper--w680">
 
     <div class="card card-4">
 
       <div class="card-body">
 
-
-        <!--        форма для заполнения логин-пароль-->
+        <!-- форма для заполнения: логин-пароль -->
         <form [formGroup]="form" (ngSubmit)="submitForm()">
 
           <h2 class="auth-title" *ngIf="!isMobile">Вход в систему</h2>
-
 
           <div class="row row-space">
             <div class="col-md-6 col-sm-12">
@@ -19,51 +18,43 @@
             </div>
 
             <div class="col-md-6 col-sm-12">
-              <!--              если хотя бы 1 раз нажали кнопку и появились ошибки валидации-->
               <div *ngIf="firstSubmitted && usernameField.errors">
                 <p *ngIf="usernameField.errors.required" class="error">Обязательное поле</p>
                 <p *ngIf="usernameField.errors.minlength" class="error">Не меньше 6 символов</p>
-
               </div>
             </div>
+
           </div>
+
           <div class="row row-space">
 
             <div class="col-md-6 col-sm-12">
               <div class="input-group">
                 <input id="username" type="text" formControlName="username" [readOnly]="isLoading"
                        class="input--style-4" [ngClass]="{ 'field-error': firstSubmitted && usernameField.errors }"/>
-
               </div>
-
             </div>
 
             <div class="col-md-6 col-sm-12" *ngIf="!isMobile">
-
               <div class="input-group">
-
                 <p class="desc">Можно вводить имя аккаунта или ваш email</p>
-
               </div>
             </div>
 
-
           </div>
 
-
           <div class="row row-space">
+
             <div class="col-md-6 col-sm-12">
               <label class="label">Пароль</label>
             </div>
-            <div class="col-md-6 col-sm-12">
 
-              <!--              если хотя бы 1 раз нажали кнопку и появились ошибки валидации-->
+            <div class="col-md-6 col-sm-12">
               <div *ngIf="firstSubmitted && passwordField.errors">
                 <div *ngIf="passwordField.errors.required" class="error">Обязательное поле</div>
                 <div *ngIf="passwordField.errors.minlength" class="error">Минимум 6 символов</div>
               </div>
             </div>
-
 
           </div>
           <div class="row row-space">
@@ -83,7 +74,6 @@
 
           </div>
 
-
           <div class="row row-space">
             <div class="col-md-6 col-sm-12">
               <button class="btn btn--radius-2 btn--blue" type="submit" [disabled]="isLoading"
@@ -96,18 +86,15 @@
 
               <img src="/assets/img/loading.gif" class="loading" *ngIf="isLoading">
 
-
               <div *ngIf="error && !isLoading">
                 <p class="error">{{error}}</p>
 
                 <div *ngIf="showResendLink"><a href="/activate-account/error" class="routerLink underline">
-                  Отправить письмо активации</a></div>
-
-
+                  Отправить письмо активации</a>
+                </div>
               </div>
 
             </div>
-
 
           </div>
 
@@ -116,22 +103,18 @@
               <a routerLink="/register" class="routerLink" [class.disabled]="isLoading ? true: null">Регистрация</a>
             </div>
 
-
             <div class="col-md-12">
               <a routerLink="/reset-password" class="routerLink" [class.disabled]="isLoading ? true: null">Забыли
                 пароль?</a>
             </div>
-
-
           </div>
-
 
         </form>
 
-
       </div>
 
-
     </div>
+
   </div>
+
 </div>
